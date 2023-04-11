@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fikri Miftahul Falah | Portfolio</title>
+    <link rel="icon" href="img/logo.png">
+    <meta
+      name="description"
+      content="This website is a portfolio of Fikri Miftahul Falah, which is intended to inform projects that have been made."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/all.min.css" />
+  </head>
+  <body>
+    <!-- header dan navbar -->
+    <section id="header">
+      <div class="navbar">
+        <img src="img/logo.png" alt="Logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#portfolio">Project</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+      <div class="header-text">
+        <h1>Hello, I'm <span>Fikri</span></h1>
+        <p>I am a Junior Python Developer and Data enthusiast.</p>
+        <a href="#contact" class="btn-action">Let's Connect!</a>
+      </div>
+    </section>
+
+    <!-- about page -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/profile.jpg" alt="Profile Picture" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, my name is Fikri. I am a graduate of Computer Engineering
+              with a GPA of 3.39. I am interested in application development and
+              programming. I have completed my thesis project, "The Long
+              Journey," a visual novel game based on Android with a multi-ending
+              system using Python. I have also developed several projects
+              outside of college, including websites and programs using Python
+              and JavaScript on GitHub.
+            </p>
+            <br />
+            <p>
+              I am currently looking for a job as a junior programmer to develop
+              my skills. I am always open to learning new things and working
+              collaboratively in a team. I believe that my experience and skills
+              will be an asset to the company.
+            </p>
+            <br />
+            <p>
+              Thank you for reading. I hope to contribute to creating innovative
+              and beneficial technological solutions.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skill')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skill">
+              <ul>
+                <li>
+                  <span>Python Developer - Entry Level</span><br />
+                  I have a basic understanding of Python frameworks, coding
+                  structures, and the ability to effectively test Python code.
+                </li>
+                <li>
+                  <span>Javascript Developer - Entry Level</span><br />
+                  I have a basic understanding of JavaScript syntax and
+                  programming concepts, as well as the ability to create dynamic
+                  user interactions on websites.
+                </li>
+                <li>
+                  <span>MySQL Database Administrator - Entry Level</span><br />
+                  I have a basic understanding of MySQL database structures,
+                  including the ability to manage and maintain databases, write
+                  basic queries, and perform database maintenance tasks.
+                </li>
+                <li>
+                  <span>Microsoft Excel Specialist - Entry Level</span><br />
+                  I have a basic understanding of Excel concepts and basic
+                  functions, such as the use of formulas, pivot tables, and
+                  charts. I also have experience managing data and creating
+                  reports using Excel.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>IT Command Center</span> Adira Finance, 2021-2022<br />
+                  As a part of the IT Command Center team, I monitored,
+                  reported, and provided solutions to fix any issues that arose
+                  with Adira Finance's application.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of Informatics Engineering</span> Universitas
+                  Pamulang, 2017-2022<br />
+                  Throughout my education, I have been able to focus on computer
+                  programming and develop the necessary skills to become a
+                  successful software developer.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service page -->
+    <section id="service">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div class="colm">
+            <i class="fa-brands fa-python"></i>
+            <h2>Automation Scripting</h2>
+            <p>
+              As a Junior Python Developer with experience in Selenium, I can
+              create bots or automation scripts to help businesses or
+              organizations with repetitive data-related tasks. By using Python
+              and Selenium, I can create efficient and effective solutions that
+              save time and effort for my clients.
+            </p>
+          </div>
+          <div class="colm">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2>Data Analysis with Pandas and NumPy</h2>
+            <p>
+              With my skills in Python programming and expertise in Pandas and
+              NumPy, I can efficiently clean and process large amounts of data
+              from a MySQL database. I am also skilled in data analysis and
+              visualization using Matplotlib, Plotly, and Seaborn. Let me help
+              you turn your raw data into valuable insights.
+            </p>
+          </div>
+          <div class="colm">
+            <i class="fas fa-file-excel"></i>
+            <h2>Data Processing</h2>
+            <p>
+              As a Junior Python Developer and Data enthusiast, I can assist in
+              processing data from Excel files using Python and saving the
+              results to a MySQL database. With my experience, I can provide
+              effective solutions and optimize data processes for businesses or
+              organizations.
+            </p>
+          </div>
+          <div class="colm">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              As a skilled web developer, I have extensive experience in
+              developing web applications using Python and JavaScript with MySQL
+              as the database. My expertise in these technologies allows me to
+              create efficient and user-friendly solutions that help businesses
+              and organizations manage their data effectively.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio page -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+          <div class="work" style="display: none">
+            <img src="img/bg1.jpg" alt="Gameplay Python" />
+            <div class="layer">
+              <h3>Gameplay Python</h3>
+              <p>
+                As a Python developer, I created this game using Python. It's a
+                fun and interactive game that showcases my programming skills.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work" style="display: none">
+            <img src="img/bg.jpg" alt="Analyst Web" />
+            <div class="layer">
+              <h3>Data Analysis Web App</h3>
+              <p>
+                I developed this web app as a data analyst. It's a tool for
+                analyzing data and presenting insights in an interactive and
+                user-friendly way.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work" style="display: none">
+            <img src="img/cover.jpg" alt="Front End Web" />
+            <div class="layer">
+              <h3>Front End Web Development</h3>
+              <p>
+                As a web developer, I designed and developed this website from
+                scratch. It features responsive design and modern user
+                interface.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work" style="display: none">
+            <!-- <img src="img/cover.jpg" alt="Front End Web" /> 
+            <div class="layer">
+              <h3>Front End Web Development</h3>
+              <p>
+                As a web developer, I designed and developed this website from
+                scratch. It features responsive design and modern user
+                interface.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>-->
+          </div>
+          <div class="work" style="display: none">
+            <!-- <img src="img/cover.jpg" alt="Front End Web" /> 
+            <div class="layer">
+              <h3>Front End Web Development</h3>
+              <p>
+                As a web developer, I designed and developed this website from
+                scratch. It features responsive design and modern user
+                interface.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>-->
+          </div>
+          <div class="work" style="display: none">
+            <!-- <img src="img/cover.jpg" alt="Front End Web" />
+            <div class="layer">
+              <h3>Front End Web Development</h3>
+              <p>
+                As a web developer, I designed and developed this website from
+                scratch. It features responsive design and modern user
+                interface.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>-->
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="seeMore()">See More</button>
+      </div>
+    </section>
+
+    <!-- contact page -->
+    <section id="contact">
+      <div class="wrapper">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <img class="profile" src="img/logo.png" alt="Profile Picture" />
+          <p>
+            If you are interested in getting to know me through social media,
+            you can see it here.
+          </p>
+          <div class="social-icons">
+            <a
+              class="social-media-icon linkedin"
+              href="https://www.linkedin.com/in/fikrimf07"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-linkedin"></span
+            ></a>
+            <a
+              class="social-media-icon github"
+              href="https://www.github.com/fikrimiftahul"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-github"></span
+            ></a>
+            <a
+              class="social-media-icon instagram"
+              href="https://www.instagram.com/si.kyky"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-instagram"></span
+            ></a>
+            <a
+              class="social-media-icon tiktok"
+              href="https://www.tiktok.com/@tenthusiastic"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-tiktok"></span
+            ></a>
+            <a
+              class="social-media-icon youtube"
+              href="https://www.youtube.com/@TEnthusiastic"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="fab fa-youtube"></span
+            ></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <h1 class="sub-title">Send your message now!</h1>
+          <form>
+            <h3>Your name</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="from_name"
+              placeholder="Enter your name"
+              required
+            />
+            <h3>Your email</h3>
+            <input
+              type="email"
+              class="form-control"
+              id="user_email"
+              placeholder="Enter your email"
+              required
+            />
+            <h3>What subject?</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="subject_id"
+              placeholder="Enter email subject"
+              required
+            />
+            <h3>Your message</h3>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+            <button onclick="sendMail()" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <p id="footer-text">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Fikri Miftahul Falah All Rights Reserved
+        </p>
+        <a
+          href="terms.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="terms-link"
+          >Terms & Conditions</a
+        >
+        <a
+          href="privacy.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="privacy-link"
+          >Privacy Policy</a
+        >
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/099a19da29.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("KFikvSq3ndA-MJW0x");
+      })();
+    </script>
+  </body>
+</html>
